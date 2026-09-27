@@ -1,0 +1,14 @@
+model_name: "mobilevit-s"
+input_shape: [256, 256, 3]
+num_classes: null # Set dynamically based on dataset
+pretrained: true
+
+training:
+  epochs: 50
+  batch_size: 16
+  learning_rate: 0.0005
+  optimizer: "adamw"
+  weight_decay: 0.01
+  early_stopping_patience: 10
+  checkpoint_dir: "models/mobilevit"
+  mixed_precision: true

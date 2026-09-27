@@ -1,0 +1,32 @@
+raw_dir: "data/raw"
+interim_dir: "data/interim"
+processed_dir: "data/processed"
+external_test_dir: "data/external_test"
+metadata_dir: "data/metadata"
+
+splits:
+  train_ratio: 0.8
+  val_ratio: 0.1
+  test_ratio: 0.1
+  random_seed: 42
+
+augmentation:
+  enabled: true
+  horizontal_flip: true
+  vertical_flip: true
+  rotation_range: 20
+  zoom_range: 0.15
+  brightness_contrast: true
+  blur: false
+
+sources:
+  - name: "plantvillage"
+    type: "kaggle"
+    url: "emmarex/plantdisease"
+  - name: "paddy_doctor"
+    type: "kaggle"
+    url: "minhhuy2810/rice-diseases-image-dataset"
+  - name: "rice_pests"
+    type: "roboflow"
+    workspace: "placeholder_workspace"
+    project: "placeholder_project"

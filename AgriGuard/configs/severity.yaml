@@ -1,0 +1,16 @@
+segmentation_method: "otsu" # options: otsu, grabcut, deep_learning
+
+thresholds:
+  low:
+    min: 0.0
+    max: 10.0
+  medium:
+    min: 10.0
+    max: 30.0
+  high:
+    min: 30.0
+    max: 100.0
+
+color_spaces:
+  leaf_mask: "hsv"
+  lesion_mask: "lab"

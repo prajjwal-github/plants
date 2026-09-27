@@ -1,0 +1,13 @@
+model_name: "yolov8s"
+task: "detect"
+imgsz: 640
+
+training:
+  epochs: 100
+  batch_size: 16
+  learning_rate: 0.01
+  optimizer: "auto"
+  patience: 20
+  project: "models/yolo"
+  name: "train"
+  device: "" # leave empty for auto

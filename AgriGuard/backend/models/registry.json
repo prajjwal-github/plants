@@ -1,0 +1,17 @@
+{
+    "efficientnet": {
+        "status": "missing",
+        "path": "",
+        "classes": []
+    },
+    "mobilevit": {
+        "status": "missing",
+        "path": "",
+        "classes": []
+    },
+    "yolo": {
+        "status": "missing",
+        "path": "",
+        "classes": []
+    }
+}
