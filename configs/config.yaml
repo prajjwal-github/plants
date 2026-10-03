@@ -1,0 +1,18 @@
+project_name: "AgriGuard"
+version: "1.0.0"
+mode: "demo" # Options: 'demo', 'production'
+paths:
+  data_dir: "data"
+  models_dir: "models"
+  outputs_dir: "outputs"
+  reports_dir: "reports"
+  logs_dir: "logs"
+
+inference:
+  pipeline_mode: "combined" # Options: combined, classification_only, detection_only, benchmark
+  target_size: [224, 224]
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/agriguard.log"

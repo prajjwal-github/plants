@@ -1,0 +1,20 @@
+# Virtual environments
+venv/
+.venv/
+backend/venv/
+
+# Secrets
+.env
+kaggle.json
+
+# Large data and model files
+data/
+backend/test_data/
+backend/models/
+models/
+outputs/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

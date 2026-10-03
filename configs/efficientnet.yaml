@@ -1,0 +1,13 @@
+model_name: "efficientnet-b0"
+input_shape: [224, 224, 3]
+num_classes: null # Set dynamically based on dataset
+pretrained: true
+
+training:
+  epochs: 2
+  batch_size: 32
+  learning_rate: 0.001
+  optimizer: "adam"
+  early_stopping_patience: 10
+  checkpoint_dir: "models/efficientnet"
+  mixed_precision: true
